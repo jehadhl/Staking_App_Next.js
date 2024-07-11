@@ -1,0 +1,70 @@
+.sec {
+    @apply border-[#2C2E34] border rounded-lg p-4 bg-[#1b1c1e] h-full  relative ;
+
+   
+
+    .sec_header {
+        @apply flex items-center justify-between;
+
+        .sec_header_left {
+            @apply flex gap-2 items-center;
+
+            .sec_header_left_circle {
+                @apply bg-[#F5BE00] w-6 h-6 rounded-full border-yellow-300 border;
+            }
+
+            .sec_header_left_text {
+                @apply text-white font-semibold;
+            }
+        }
+
+
+        .check{
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            @apply rounded-full w-6 h-6 text-black flex justify-center items-center;
+        }
+
+        .notcheck {
+            @apply bg-[#424247] border-[#CCCCCC] rounded-full w-6 h-6 border;
+        }
+
+
+    }
+
+    .line {
+        @apply my-4 bg-[#2C2E34] w-full h-[1px];
+    }
+
+    .rewardToken {
+        @apply pt-2 flex items-center justify-between pb-1;
+
+        .rewardToken_text {
+            @apply text-[#1BBF72] font-medium;
+        }
+    }
+
+    .info_rewardsToken {
+        @apply space-y-1 h-[160px];
+
+        .info_content {
+            @apply flex items-center justify-between;
+
+            .rewardToken_text {
+                @apply text-[#1BBF72] font-medium;
+            }
+
+            .info_text {
+                @apply text-sm;
+            }
+        }
+    }
+
+    .description {
+        @apply text-xs text-white pt-6;
+    }
+}
+
+.activeBackground{
+  background: linear-gradient(223.19deg, #01bbef0a -22.98%, #20bf5513 118.52%);
+  @apply border border-Green ;
+}

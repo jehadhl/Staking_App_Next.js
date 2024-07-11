@@ -1,0 +1,63 @@
+.card {
+    @apply border border-borderGreen rounded-xl;
+
+
+    .cardFlex {
+        @apply flex justify-between gap-6 items-center S-600:p-6 S-280:p-4 rounded-xl h-full z-10 bg-opacity-[0.05] bg-borderGreen S-280:flex-col S-600:flex-row;
+
+
+
+        .infoZent {
+            @apply flex S-500:items-center justify-between S-500:gap-8 S-280:gap-4 w-full S-280:flex-col S-500:flex-row;
+
+
+            .image_wrapper {
+                @apply S-600:mt-0 flex gap-4 items-center;
+            }
+
+            .totalPrice {
+                @apply flex gap-2;
+
+                .skeloading {
+                    @apply bg-borderGray h-[25px] px-6 animate-pulse rounded-xl w-[60px];
+                }
+
+                .text {
+                    @apply text-white font-bold S-1060:text-lg S-280:text-sm;
+
+
+                }
+
+                .spanText {
+                    @apply text-yellowDark font-bold S-1060:text-lg S-280:text-sm;
+                }
+            }
+
+
+            .infoRewards {
+                @apply flex S-1060:gap-12 S-280:gap-4 flex-wrap w-full items-center;
+
+                .col {
+                    .text {
+                        @apply text-GrayScale text-sm;
+                    }
+
+                    .label {
+                        @apply text-white text-base font-semibold;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            @apply S-600:w-[190px] h-[44px] text-white rounded-full S-600:text-base S-280:text-sm font-medium S-600:p-0 S-280:p-3 cursor-pointer;
+
+        }
+
+        .disbled {
+            @apply bg-[#66707A] S-600:w-[190px] h-[44px] text-white rounded-full S-600:text-base S-280:text-sm font-medium S-600:p-0 S-280:p-3 cursor-pointer;
+        }
+    }
+
+}

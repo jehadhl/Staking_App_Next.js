@@ -1,0 +1,28 @@
+.table {
+    @apply w-full  ;
+    .thead {
+        @apply text-[13px] uppercase bg-Primary;
+
+        .th {
+            @apply px-6 py-6;
+
+            .p {
+                @apply bg-borderGray h-[30px] px-6 animate-pulse rounded-xl;
+            }
+        }
+
+    
+    }
+
+    .trbody {
+     
+
+        .td {
+            @apply px-6 py-6 text-sm font-medium text-center;
+
+            .p {
+                @apply bg-borderGray h-[30px] px-6  animate-pulse rounded-xl;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.btnContainer {
+    background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    height: 48px;
+    padding: 1px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2;
+  
+
+
+    span {
+        align-items: center;
+    
+        border-radius: 40px;
+        display: flex;
+   
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+       
+        text-transform: capitalize;
+
+        @apply  S-280:bg-Primary S-900:bg-black ;
+    }
+
+    .icons {
+        @apply text-xl;
+    }
+
+
+    .btnLogOut {
+        @apply absolute top-[120%] flex items-center gap-2 bg-darkGray border-borderGray border rounded-full w-full p-2 px-4 hover:border-Green hover:text-Green text-white;
+
+        .textlogOut {
+            @apply text-sm;
+        }
+
+
+    }
+}

@@ -1,0 +1,7 @@
+.btn{
+    @apply w-full bg-GrayBlue text-white py-2 rounded-full S-900:text-base S-280:text-sm;
+}
+
+.active{
+    @apply bg-Green text-white py-2 rounded-full S-900:text-base S-280:text-sm
+}

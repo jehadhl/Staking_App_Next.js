@@ -1,0 +1,324 @@
+.TokenStaking {
+    @apply max-w-[1440px] mx-auto w-[90vw] my-12;
+
+    .showBtn {
+        @apply S-280:mb-6 S-600:mb-0 S-280:block S-1060:hidden w-full;
+    }
+
+    .stakingDetailsCard {
+        @apply bg-darkGray mt-6 border border-borderGray rounded-xl S-1060:p-8 S-280:p-4;
+
+        .gridSection {
+            @apply grid grid-cols-12 S-900:gap-6 S-280:gap-4;
+
+            .secOne {
+                @apply S-1060:col-span-5 S-280:col-span-12;
+
+                .textHeader {
+                    @apply text-white text-2xl font-semibold pb-6;
+                }
+
+                .stakedAmout {
+                    @apply flex justify-between items-center space-y-2;
+
+                    .stakedAmout_text {
+                        @apply text-GrayScale text-sm font-medium;
+                    }
+
+                    .stakedAmout_price {
+                        @apply text-yellowDark text-sm font-medium;
+                    }
+                }
+
+                .line {
+                    @apply h-[1px] w-full bg-borderGray my-6;
+                }
+
+
+                .percentageCard {
+                    @apply border border-borderGray rounded-lg p-4 my-10 space-y-3 bg-Primary;
+
+                    .percentageCard_button {
+                        @apply flex items-center gap-2;
+                    }
+
+                    .percentageCard_header {
+                        @apply flex justify-between;
+
+                        .ZentOne {
+                            @apply flex gap-2 items-center w-full;
+
+                            .titleOneZent {
+                                @apply text-white text-sm;
+                            }
+                        }
+
+                        .price {
+                            @apply text-white text-xl;
+                        }
+                    }
+
+                    .percentageCard_totalPercentage {
+                        @apply flex justify-between items-center;
+
+                        .percentageCard_totalPercentage_text {
+                            @apply text-white text-sm;
+
+                            span {
+                                @apply text-xs;
+                            }
+                        }
+
+                        .percentageCard_totalPercentage_total {
+                            @apply text-white;
+                        }
+                    }
+                }
+
+
+                .fees {
+                    @apply bg-GrayBlue rounded-lg p-4 space-y-2 mb-12;
+
+                    .fees_info {
+                        @apply flex justify-between items-center;
+
+                        .fees_info_text {
+                            @apply text-GrayScale text-sm;
+                        }
+
+                        .fees_info_value {
+                            @apply text-white text-sm;
+                        }
+                    }
+                }
+
+                .flexButton {
+                    @apply flex gap-4;
+
+
+                    .btnContainer {
+                        background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+                        border-radius: 40px;
+                        box-sizing: border-box;
+                        color: #fff;
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                        height: 42px;
+                        padding: 1px;
+                        position: relative;
+                        text-decoration: none;
+                        z-index: 2;
+                        @apply w-full;
+
+
+                        span {
+                            @apply bg-darkGray justify-center items-center text-base h-full font-medium flex rounded-[40px] text-borderGreen;
+                        }
+
+                    }
+                }
+            }
+
+            .secTwo {
+                @apply S-1060:col-span-7 S-280:col-span-12 S-900:border-l S-280:border-0 S-900:pl-4 S-280:pl-0 border-borderGray;
+
+
+                .selectPool {
+                    @apply border-b border-borderGray flex gap-4 justify-between items-center;
+
+                    .box {
+                        @apply p-4 cursor-pointer hover:bg-GrayScale rounded-tr-2xl rounded-tl-2xl text-GrayScale hover:text-GrayBlue font-semibold text-xs;
+
+                        // .box_title {
+                        //     @apply text-GrayScale  hover:text-GrayBlue hover:font-semibold;
+                        // }
+                    }
+
+                    .activeBox {
+                        @apply border-b border-Green bg-GrayBlue rounded-tr-2xl rounded-tl-2xl hover:bg-GrayBlue;
+
+                        .box_title {
+                            @apply text-white font-semibold hover:text-white;
+                        }
+                    }
+                }
+
+                .showinfo {
+                    
+
+
+                 
+
+
+                    .mainOfShow {
+                        @apply relative border border-Primary rounded-lg;
+                    }
+
+
+                }
+
+                .footerOfTable {
+                    @apply w-full flex justify-between items-center gap-2 p-[10px] px-3 mt-1;
+
+
+                    .iconWrapper {
+                        @apply bg-Primary rounded-lg p-[6px] border border-borderGray;
+
+
+                        .icon {
+                            @apply text-white text-xl;
+                        }
+                    }
+
+
+                    .opacity {
+                        background-color: #1313131c;
+                        @apply cursor-not-allowed;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.input {
+    @apply bg-[#1F2023] p-4 w-full rounded-full;
+
+    .inputText {
+        @apply text-white text-center cursor-pointer S-280:hidden S-600:block;
+    }
+
+    .inputText2 {
+        @apply text-white text-center cursor-pointer S-280:block S-600:hidden;
+    }
+}
+
+
+.btn {
+    background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+    @apply text-white w-full rounded-full p-3 flex gap-2 justify-center items-center;
+}
+
+
+.cancel {
+    @apply w-full bg-GrayBlue text-white p-2 rounded-full;
+}
+
+.textSpan{
+    @apply text-GrayScale font-normal text-sm;
+}
+
+.roundedFullg{
+    background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%) ;
+    @apply w-full text-white p-4 rounded-full;
+}
+
+
+.line {
+    @apply my-4 bg-[#2C2E34] w-full h-[1px];
+}
+
+.option {
+    @apply bg-Primary w-full rounded-full p-4 mb-4;
+
+    .option_select {
+        @apply flex justify-between items-center;
+
+        .indexs{
+            @apply flex gap-2 text-white;
+        }
+
+        .headIcon{
+            @apply flex  gap-2 items-center;
+        }
+
+
+        .completed {
+            @apply bg-[#1BBF723D] text-white px-4 py-1 rounded-full text-center font-semibold text-xs;
+        }
+
+
+        .onGoing{
+            @apply  bg-[#f5c0004d]  text-white  py-1 rounded-full text-center font-semibold text-xs px-4;
+        }
+    }
+}
+
+
+.main {
+    @apply rounded-lg my-4 overflow-hidden bg-Primary h-[300px] ;
+
+
+    .flexContent {
+        @apply flex justify-between py-3 px-4 bg-transparent items-center  whitespace-nowrap S-280:overflow-x-scroll S-280:gap-4 S-600:gap-2 S-600:overflow-hidden ;
+        .table {
+            @apply flex gap-4  S-280:w-auto items-start;
+
+            .box {
+
+                .headTitleId{
+                    @apply  text-sm text-white
+                }
+                .headTitle {
+                    @apply text-GrayScale font-normal text-xs;
+                }
+
+                .p {
+                    @apply text-white text-xs;
+                }
+            }
+
+        }
+
+
+        .completed {
+            @apply bg-[#1BBF723D] text-white px-4 py-1 rounded-full text-center text-xs ;
+        }
+
+
+        .onGoing{
+            @apply  bg-[#f5c0004d]  text-white px-4 py-1 rounded-full text-center font-semibold text-xs;
+        }
+
+
+
+    }
+
+
+    .bgGround {
+        @apply bg-[#1E46364A] border-none ;
+    }
+
+
+    .bgGroundOnGoing{
+        @apply bg-[#463f1e4a]
+    }
+
+    .haveBorder{
+        @apply border-t border-borderGray ;
+    }
+
+    .noBorder{
+        @apply border-none ;
+    }
+
+
+
+
+    .trasparent{
+        @apply bg-transparent ;
+    }
+}
+
+.overflowShow{
+    @apply overflow-y-scroll ;
+}
+
+
+
+.hide-scroll {
+    overflow: hidden !important;
+}

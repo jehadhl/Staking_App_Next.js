@@ -1,0 +1,52 @@
+.main {
+    @apply relative border border-borderGray rounded-lg S-280:overflow-x-scroll S-1360:overflow-hidden  w-full;
+
+
+    .table {
+        @apply w-full rounded-lg;
+
+        .table_head {
+            @apply text-xs   bg-Primary  capitalize text-center;
+
+            .th_text {
+              
+          
+                white-space: nowrap;
+                @apply py-6 px-4 text-GrayScale text-xs text-center font-medium  capitalize ;
+            }
+        }
+
+        .table_row {
+            @apply border-borderGray border-b cursor-pointer;
+
+            .table_col {
+                white-space: nowrap;
+                @apply py-4 px-4 text-xs font-medium text-white text-center;
+
+
+                .mainbg {
+                 
+                    @apply w-[16px] h-[16px] rounded-full border border-GrayScale flex justify-center items-center bg-borderGray;
+
+
+                  
+                }
+
+                .active {
+                    background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+                    @apply w-[16px] h-[16px] rounded-full border border-white flex justify-center items-center;
+
+
+                    .childbg {
+                        @apply bg-white w-[6px] h-[6px] rounded-full;
+                    }
+                }
+
+                .networkBtn{
+                    @apply  bg-[#1BBF723D] flex items-center p-2 rounded-full gap-3  justify-center;
+                }
+
+            }
+        }
+    }
+}

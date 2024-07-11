@@ -1,0 +1,119 @@
+.main {
+    @apply relative border border-borderGray rounded-lg S-280:overflow-x-scroll S-1360:overflow-hidden  w-full mt-8;
+  
+  
+    .table {
+      @apply w-full rounded-lg;
+  
+      .table_head {
+        @apply text-[13px]   bg-Primary capitalize;
+  
+        .th_text {
+          white-space: nowrap;
+          @apply py-6 px-4 text-GrayScale text-xs text-center font-medium  capitalize ;
+        }
+      }
+  
+      .table_row {
+        white-space: nowrap;
+        @apply border-borderGray border-b w-full ;
+  
+        .table_col {
+       
+          white-space: nowrap;
+          @apply py-6 px-4 text-xs font-medium text-white text-center;
+  
+  
+          // .mainbg {
+  
+          //   @apply w-[15px] h-[15px] rounded-full border border-GrayScale flex justify-center items-center bg-borderGray;
+  
+  
+  
+          // }
+  
+          // .active {
+          //   background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+          //   @apply w-[15px] h-[15px] rounded-full border border-white flex justify-center items-center;
+  
+  
+          //   .childbg {
+          //     @apply bg-white w-[10px] h-[10px] rounded-full;
+          //   }
+          // }
+  
+                 .mainbg {
+                   
+                      @apply w-[16px] h-[16px] rounded-full border border-GrayScale flex justify-center items-center bg-borderGray;
+  
+  
+                    
+                  }
+  
+                  .active {
+                      background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+                      @apply w-[16px] h-[16px] rounded-full border border-white flex justify-center items-center;
+  
+  
+                      .childbg {
+                          @apply bg-white w-[6px] h-[6px] rounded-full;
+                      }
+                  }
+  
+  
+          //     .radlabel {
+          //         display: flex;
+          //         align-items: center;
+  
+          //         border-radius: 100px;
+  
+  
+  
+          //         cursor: pointer;
+          //         transition: .3s;
+          //       }
+  
+          //     //   .radlabel:hover,
+          //     //   .radlabel:focus-within {
+          //     //     background: hsla(0, 0%, 80%, .14);
+          //     //   }
+  
+          //       .radInpUt {
+          //         position: absolute;
+          //         left: 0;
+          //         top: 0;
+          //         width: 1px;
+          //         height: 1px;
+          //         opacity: 0;
+          //         z-index: -1;
+          //       }
+  
+          //       .raddesign {
+          //         width: 22px;
+          //         height: 22px;
+          //         border-radius: 100px;
+  
+          //         background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+          //         position: relative;
+          //       }
+  
+          //       .raddesign::before {
+          //         content: '';
+  
+          //         display: inline-block;
+          //         width: inherit;
+          //         height: inherit;
+          //         border-radius: inherit;
+  
+          //         background: hsl(0, 0%, 90%);
+          //         transform: scale(1);
+          //         transition: .3s;
+          //       }
+  
+          //       .radInpUt:checked+.raddesign::before {
+          //         transform: scale(0);
+          //       }
+        }
+      }
+    }
+  }

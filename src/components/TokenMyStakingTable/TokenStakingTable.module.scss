@@ -1,0 +1,72 @@
+.main {
+    @apply relative border border-borderGray rounded-lg S-280:overflow-x-scroll S-1560:overflow-hidden  w-full ;
+
+
+    .table {
+        @apply w-full rounded-lg;
+
+        .table_head {
+            @apply text-[13px]   bg-Primary capitalize;
+
+            .th_text {
+              
+          
+                white-space: nowrap;
+                @apply py-6 px-4 text-GrayScale text-xs text-center font-medium  capitalize ;
+            }
+        }
+
+        .table_row {
+            @apply border-borderGray border-b w-full ;
+
+            .table_col {
+                white-space: nowrap;
+                @apply py-6 px-4 text-xs font-medium text-white text-center;
+
+                .btn {
+                    @apply border-Green border text-white rounded-full px-4 py-2;
+                }
+
+
+                .claimed{
+                    @apply bg-[#ffe60018] px-2 py-1 rounded-full text-center text-[#FFE500] font-semibold;
+                }
+
+                .completed{
+                    @apply  bg-[#1BBF723D]  text-white  px-2 py-2 rounded-full text-center font-semibold;
+                }
+
+                .onGoing{
+                    @apply  bg-[#f5c0004d]  text-white px-2 py-2 rounded-full text-center font-semibold;
+                }
+
+
+
+                .mainbg {
+                 
+                    @apply w-[16px] h-[16px] rounded-full border border-GrayScale flex justify-center items-center bg-borderGray;
+
+
+                  
+                }
+
+                .active {
+                    background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+                    @apply w-[16px] h-[16px] rounded-full border border-white flex justify-center items-center;
+
+
+                    .childbg {
+                        @apply bg-white w-[6px] h-[6px] rounded-full;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+.overflowShow{
+    @apply overflow-y-scroll h-[400px] ;
+}

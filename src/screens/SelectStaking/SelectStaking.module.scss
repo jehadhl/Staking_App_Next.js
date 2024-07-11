@@ -1,0 +1,86 @@
+.SelectStaking {
+    @apply max-w-[1440px] mx-auto flex justify-center S-280:my-8 S-600:my-12 items-center w-[90vw] flex-col relative gap-4;
+
+
+
+    .showBtn {
+        @apply S-280:mb-6 S-600:mb-0 S-280:flex S-900:hidden w-full flex gap-4 flex-col justify-center max-w-[700px] ;
+
+
+        .linee {
+            @apply w-full h-[2px] bg-[#24262a] ;
+        }
+
+        .btnContainer {
+            width: 100%;
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            border-radius: 40px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            letter-spacing: 1px;
+            height: 48px;
+            padding: 1px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            z-index: 2;
+
+
+            span {
+                align-items: center;
+          
+                border-radius: 40px;
+                display: flex;
+
+                height: 100%;
+                width: 100%;
+
+                font-weight: 500;
+
+                text-transform: capitalize;
+
+                @apply S-1060:px-4 S-280:px-2 gap-2 S-1060:text-sm S-280:text-sm text-center justify-center bg-Primary;
+            }
+
+        }
+
+
+    }
+
+    .SelectStaking_Card {
+        @apply bg-[#18191b] text-white max-w-[700px] w-full S-280:p-4 S-600:p-8 rounded-lg border-[#24262a] border-2 h-full;
+
+
+        .SelectStaking_Content {
+            .text {
+                @apply text-lg
+            }
+
+            .paragraph {
+                @apply text-sm text-[#BFC6CC];
+            }
+        }
+
+        .gridCard {
+            @apply grid S-280:grid-cols-1 S-900:grid-cols-2 mt-8 gap-4 h-full;
+
+
+        }
+
+
+        .btn_Connect_Wallet {
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            @apply w-full mt-8 rounded-full p-3 flex gap-2 justify-center items-center z-10;
+
+            .icon {
+                @apply w-6 h-6;
+            }
+        }
+
+        .loading {
+            background: linear-gradient(223.19deg, #01bbef63 -22.98%, #20bf5570 118.52%);
+            @apply cursor-not-allowed;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+.SelectPlan {
+    @apply max-w-[1440px] mx-auto flex justify-center S-280:my-8 S-600:my-12 items-center w-[90vw] flex-col relative gap-4 ;
+
+
+    .showBtn {
+        @apply S-280:mb-6 S-600:mb-0 S-280:flex S-900:hidden w-full flex gap-4 flex-col justify-center max-w-[700px] ;
+
+
+        .linee {
+            @apply w-full h-[2px] bg-[#24262a] ;
+        }
+
+        .btnContainer {
+            width: 100%;
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            border-radius: 40px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            letter-spacing: 1px;
+            height: 48px;
+            padding: 1px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            z-index: 2;
+
+
+            span {
+                align-items: center;
+          
+                border-radius: 40px;
+                display: flex;
+
+                height: 100%;
+                width: 100%;
+
+                font-weight: 500;
+
+                text-transform: capitalize;
+
+                @apply S-1060:px-4 S-280:px-2 gap-2 S-1060:text-sm S-280:text-sm text-center justify-center bg-Primary;
+            }
+
+        }
+
+
+    }
+
+    .SelectPlan_Card {
+        @apply bg-[#18191b] text-white max-w-[900px] w-full S-280:p-4 S-600:p-8 rounded-lg border-[#24262a] border-2 h-full;
+
+
+        .SelectPlan_Content {
+            @apply space-y-2;
+
+            .flexHeader {
+                @apply flex gap-2 items-center;
+
+                .text {
+                    @apply font-semibold S-900:text-lg S-280:text-base;
+                }
+
+                .paragraph {
+                    @apply text-GrayScale S-900:text-base S-280:text-sm;
+                }
+            }
+        }
+
+        .cards {
+            @apply grid grid-cols-1 my-8 gap-4;
+
+            .cards_items {
+                @apply border-[#24262a] border-2 p-4 rounded-lg cursor-pointer;
+
+                .cards_items_header {
+                    @apply flex gap-2 items-center;
+
+                    .text {
+                        @apply text-Green font-medium S-900:text-base S-280:text-sm;
+                    }
+
+
+                    .img {
+                        @apply w-[25px] h-[25px];
+                    }
+                }
+
+
+                .line {
+                    @apply my-2 bg-[#2C2E34] w-full h-[1px];
+                }
+
+                .body {
+                    @apply space-y-2 pt-2;
+
+                    .sec1 {
+                        @apply flex S-600:gap-6 S-280:gap-4 justify-between  flex-wrap   ;
+
+                        .sec1_one {
+                            @apply space-y-1 ;
+
+                            .text {
+                                @apply text-sm;
+                            }
+
+                            .paragraph {
+                                @apply text-xs text-GrayScale;
+                            }
+                        }
+                    }
+
+                    .sec1_one_one{
+                        @apply S-280:w-[25%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+
+                    .sec1_one_two{
+                        @apply S-280:w-[60%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+                    .sec1_one_three{
+                        @apply S-280:w-[40%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+
+                    .sec1_one_four{
+                        @apply S-280:w-[40%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+                    .sec1_one_five{
+                        @apply S-280:w-[100%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+                    .sec1_one_six{
+                        @apply S-280:w-[100%] S-500:w-[40%] S-900:w-auto ;
+                    }
+
+
+           
+                }
+            }
+
+            .activeBackground{
+                background: linear-gradient(223.19deg, #01bbef0a -22.98%, #20bf5513 118.52%);
+                @apply border border-Green ;
+              }
+        }
+
+
+        .btn {
+            background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+            @apply w-full h-[44px] text-white rounded-full S-600:text-base S-280:text-sm font-medium S-600:p-0 S-280:p-3;
+        }
+    }
+}

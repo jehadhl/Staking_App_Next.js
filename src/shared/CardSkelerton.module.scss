@@ -1,0 +1,11 @@
+.card {
+    @apply border-[#2C2E34] border rounded-lg p-4 bg-[#1b1c1e] h-full space-y-4;
+
+    .line {
+        @apply my-4 bg-[#2C2E34] w-full h-[1px];
+    }
+
+    .skeLine {
+        @apply bg-borderGray h-[25px] px-6 animate-pulse rounded-xl ;
+    }
+}

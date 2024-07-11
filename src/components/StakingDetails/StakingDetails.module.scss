@@ -1,0 +1,226 @@
+.textHeader {
+  @apply text-white S-1060:text-2xl S-280:text-base font-semibold pb-6;
+}
+
+
+.gridDev {
+  @apply grid S-1060:grid-cols-3 S-600:grid-cols-2 S-280:grid-cols-1 gap-3;
+
+  .stakedAmout {
+    @apply flex justify-between  S-1060:flex-col S-280:flex-row bg-GrayBlue p-4 rounded-lg S-500:gap-4 S-280:gap-2 relative;
+
+    .stakedAmout_text {
+      @apply text-white S-500:text-sm S-280:text-xs font-medium;
+    }
+
+    .stakedAmout_price {
+      @apply text-white S-500:text-sm S-280:text-xs font-medium flex items-center gap-1 flex-wrap S-280:justify-end S-500:justify-start;
+
+      .spanText {
+        @apply text-yellowDark;
+      }
+
+
+      .skeloading {
+        @apply bg-borderGray h-[25px] px-6 animate-pulse rounded-xl w-[60px];
+      }
+    }
+  }
+}
+
+.line {
+  @apply h-[1px] w-full bg-borderGray my-6;
+}
+
+
+.percentageCard {
+  @apply border border-borderGray rounded-lg p-4 my-10 space-y-4 bg-Primary;
+
+
+  .showInfoo {
+    @apply bg-dark rounded-full flex gap-3 items-center text-white px-3 py-[6px];
+
+    .text {
+      @apply flex gap-3 items-center text-white S-600:text-sm S-280:text-[10px] S-340:text-xs;
+    }
+  }
+
+  .percentageCard_button {
+    @apply flex items-center gap-2 mb-1;
+  }
+
+  .percentageCard_header {
+    @apply flex justify-between gap-2;
+
+    .input {
+      @apply bg-transparent text-white text-right outline-none w-[90%];
+    }
+
+    .ZentOne {
+      @apply flex gap-2 items-center;
+
+      .titleOneZent {
+        @apply text-white text-sm;
+      }
+    }
+
+    .price {
+      @apply text-white text-xl;
+    }
+  }
+
+  .percentageCard_totalPercentage {
+    @apply flex justify-between items-center;
+
+    .percentageCard_totalPercentage_text {
+      @apply text-white text-sm;
+
+      span {
+        @apply text-xs;
+      }
+    }
+
+    .percentageCard_totalPercentage_total {
+      @apply text-white;
+    }
+  }
+}
+
+
+.fees {
+  @apply bg-GrayBlue rounded-lg p-4 space-y-2 mb-8;
+
+  .fees_info {
+    @apply flex justify-between items-center;
+
+    .skeloading {
+      @apply bg-borderGray h-[25px] px-6 animate-pulse rounded-xl w-[60px];
+    }
+
+    .fees_info_text {
+      @apply text-GrayScale text-sm flex gap-2 items-center;
+    }
+
+    .fees_info_value {
+      @apply text-white text-sm;
+    }
+  }
+}
+
+.flexButton {
+  @apply flex gap-4 relative S-280:flex-col S-600:flex-row;
+
+
+  .btnContainer {
+
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    height: 42px;
+    padding: 1px;
+    position: relative;
+    text-decoration: none;
+
+    z-index: 2;
+    @apply w-full bg-Green text-sm;
+
+
+    span {
+      @apply bg-darkGray justify-center items-center text-base h-full font-medium flex rounded-[40px] text-borderGreen hover:bg-Green hover:text-white;
+    }
+
+  }
+
+
+  .unactive {
+    @apply bg-[#66707A] text-white cursor-not-allowed;
+  }
+}
+
+.modal {
+  @apply flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[-1] outline-none focus:outline-none justify-center items-center bg-black/50 opacity-0 h-full;
+  transition: all 1.5s;
+
+  .modalBox {
+    @apply flex justify-center items-center max-w-[450px];
+
+
+    .content {
+      @apply mb-6;
+
+      .text_content {
+        @apply text-white S-1060:text-xl S-280:text-lg font-semibold;
+      }
+
+      .p_content {
+        @apply text-white font-normal;
+      }
+    }
+
+    .loadingContent {
+      @apply flex gap-4;
+
+      .check {
+        background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+        @apply rounded-full w-8 h-8 text-black flex justify-center items-center col-span-1 mt-1 ;
+      }
+
+      .notcheck{
+        @apply rounded-full w-8 h-8 text-black flex justify-center items-center col-span-1 mt-1 bg-GrayScale;
+      }
+
+      .groupInfo {
+        @apply col-span-11;
+
+        .text_groupInfo {
+          @apply text-white font-semibold text-base;
+        }
+
+        .text_p {
+          @apply text-white text-sm;
+        }
+      }
+    }
+
+    .btnContainer {
+      background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      height: 48px;
+      padding: 1px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      z-index: 2;
+      margin-top: 4rem;
+
+
+      span {
+
+        background: #18191B;
+        border-radius: 40px;
+        display: flex;
+
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+
+        text-transform: capitalize;
+
+        @apply px-4 gap-2 text-center justify-center items-center;
+      }
+
+    }
+  }
+}
+
+.modal.modalshow {
+  @apply opacity-100 top-0 z-[10000];
+}

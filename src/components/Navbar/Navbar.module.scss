@@ -1,0 +1,91 @@
+.header {
+    @apply bg-black;
+
+    .container {
+        @apply flex items-center justify-between mx-auto w-[90vw] py-4;
+
+             .btnContainer {
+                border-radius: 40px;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                letter-spacing: 1px;
+                height: 48px;
+                padding: 1px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                z-index: 2;
+
+
+                span {
+                    align-items: center;
+                    background: #000;
+                    border-radius: 40px;
+                    display: flex;
+
+                    height: 100%;
+                    width: 100%;
+
+                    font-weight: 500;
+
+                    text-transform: capitalize;
+
+                    @apply S-1060:px-4 S-280:px-2 gap-2 S-1060:text-sm S-280:text-sm;
+                }
+
+            }
+
+
+        .showBtn {
+            @apply flex items-center gap-2;
+
+            .btnContainer {
+                border-radius: 40px;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                letter-spacing: 1px;
+                height: 48px;
+                padding: 1px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                z-index: 2;
+
+
+                span {
+                    align-items: center;
+                    background: #000;
+                    border-radius: 40px;
+                    display: flex;
+
+                    height: 100%;
+                    width: 100%;
+
+                    font-weight: 500;
+
+                    text-transform: capitalize;
+
+                    @apply S-1060:px-4 S-280:px-2 gap-2 S-1060:text-sm S-280:text-sm;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (min-width : 660px) {
+    .header .container .showBtn .btnContainer {
+        background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%) !important;
+    }
+}
+
+
+@media (max-width : 580px) {
+    .header .container .showBtn .btnContainer {
+        background: transparent !important;
+    }
+
+}

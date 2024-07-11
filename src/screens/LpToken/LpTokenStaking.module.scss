@@ -1,0 +1,92 @@
+.LpTokenStaking {
+  @apply max-w-[1440px] mx-auto w-[90vw] mt-12;
+
+  .showBtn {
+    @apply S-280:mb-6 S-600:mb-0 S-280:block S-1060:hidden w-full;
+  }
+
+
+  .stakingDetailsCard {
+    @apply bg-darkGray my-8 border border-borderGray rounded-xl S-900:p-8 S-280:p-4;
+
+    .gridSection {
+      @apply grid grid-cols-12 S-600:gap-6 S-280:gap-4;
+
+      .secOne {
+        @apply S-1060:col-span-5 S-280:col-span-12 S-280:mb-4 S-600:mb-0;
+
+
+      }
+
+      .secTwo {
+        @apply S-1060:col-span-7 S-280:col-span-12 S-900:border-l S-280:border-0 S-900:pl-4 S-280:pl-0 S-900:border-borderGray;
+
+        .selectPool {
+          @apply border-b border-borderGray flex gap-4 justify-between items-center;
+
+          .box {
+              @apply p-4 cursor-pointer hover:bg-GrayScale  rounded-tr-2xl rounded-tl-2xl text-GrayScale  hover:text-GrayBlue font-semibold text-xs;
+
+              // .box_title {
+              //     @apply text-GrayScale  hover:text-GrayBlue hover:font-semibold;
+              // }
+          }
+
+          .activeBox {
+              @apply border-b border-Green bg-GrayBlue rounded-tr-2xl rounded-tl-2xl hover:bg-GrayBlue;
+
+              .box_title {
+                  @apply text-white font-semibold hover:text-white;
+              }
+          }
+      }
+
+        .showinfo {
+         
+
+          .footerOfTable {
+            @apply w-full flex justify-between items-center gap-2 p-[10px] px-3 mt-1;
+
+
+            .iconWrapper {
+                @apply bg-Primary rounded-lg p-[6px] border border-borderGray;
+
+
+                .icon {
+                    @apply text-white text-xl;
+                }
+            }
+
+
+            .opacity {
+                background-color: #1313131c;
+                @apply cursor-not-allowed;
+            }
+        }
+        }
+
+        .mt{
+          @apply mt-8 ;
+        }
+      }
+    }
+  }
+}
+
+
+.input{
+  @apply bg-[#1F2023] p-4 w-full rounded-full;
+  .inputText{
+    @apply text-white text-center cursor-pointer S-280:hidden S-600:block;
+  }
+
+  .inputText2{
+    @apply text-white text-center cursor-pointer S-280:block S-600:hidden;
+  }
+}
+
+
+.btn{
+  background: linear-gradient(223.19deg, #01BAEF -22.98%, #20BF55 118.52%);
+  @apply text-white w-full  rounded-full p-3 flex gap-2 justify-center items-center ;
+}

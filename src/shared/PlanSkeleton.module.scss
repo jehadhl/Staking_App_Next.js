@@ -1,0 +1,32 @@
+.cardsItems {
+    @apply border-[#24262a] border-2 w-full p-4 rounded-lg;
+
+
+    .header {
+        @apply animate-pulse flex gap-4;
+
+        .circle {
+            @apply w-[25px] h-[25px] rounded-full animate-pulse bg-borderGray;
+        }
+
+        .lineText {
+            @apply S-600:w-[85px] S-280:w-[65px] h-[25px] rounded-full animate-pulse bg-borderGray ;
+        }
+    }
+
+    .line {
+        @apply my-2 bg-[#2C2E34] w-full h-[1px];
+    }
+
+    .bodyCard {
+        @apply flex justify-between items-center gap-6 flex-wrap;
+
+
+        .head{
+            @apply space-y-2 ;
+            .head_text{
+                @apply S-600:w-[100px] S-280:w-[80px] h-[25px] rounded-full animate-pulse bg-borderGray
+            }
+        }
+    }
+}

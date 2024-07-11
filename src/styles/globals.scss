@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap') ;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.ttf');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+body {
+    @apply bg-Primary;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width:thin;
+    scrollbar-color: #1f2023 #3a3a3a;
+    // cursor: pointer;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f3eeee;
+    border-radius: 5px;
+  }
+
+  .hide-scroll {
+    overflow: hidden !important;
+}
+  

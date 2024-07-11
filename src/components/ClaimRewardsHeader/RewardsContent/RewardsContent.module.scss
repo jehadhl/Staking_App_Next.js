@@ -1,0 +1,9 @@
+.content{
+    @apply space-y-2 flex gap-6 ;
+    .text{
+        @apply text-white S-600:text-xl S-280:text-sm font-semibold ;
+    }
+    .label{
+        @apply text-GrayScale S-600:text-base S-280:text-sm ;
+    }
+}
